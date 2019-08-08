@@ -1,0 +1,61 @@
+@import "fonts";
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+              box-sizing: border-box;
+}
+:root{
+	font-size: 10px;
+}
+body{
+	overflow-x: hidden;
+}
+.wrapper{
+	min-width: 320px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: $font1;	
+	overflow-x: hidden;
+	color: #000;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+h1, 
+h2,
+h3,
+h4{
+	font-weight: normal;
+}
+.container{
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 100%;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	@media screen and (max-width: 1050px){
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+}
+
+input[type=submit],
+input[type=text]{
+      -webkit-appearance: none;
+    	-moz-appearance: none;
+    		appearance: none;
+     border-radius: 0;
+     border: none;
+}
+
+@import "header";
+@import "search-map";
+@import "block-title";
+@import "block-list";
+@import "table";
+@import "footer";
